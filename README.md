@@ -17,6 +17,8 @@ To enable automatic deployments, you need to configure the following secrets in 
 2. `CLOUDFLARE_ACCOUNT_ID`: Your Cloudflare Account ID
    - Found in Cloudflare Dashboard → Overview (right sidebar)
 
+**Note:** The deployment workflow is configured to deploy to a Cloudflare Pages project named "hope". If you want to use a different project name, edit the `projectName` field in `.github/workflows/deploy.yml`.
+
 ### Usage
 
 1. Place your website files in the `/upload` folder
