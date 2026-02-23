@@ -12,12 +12,48 @@
 
     <style>
         :root {
-            /* Color Palette based on previous images */
+            /* Light Mode Color Palette (Default) */
             --gold-light: #e6c778;
             --gold-dark: #a67c00;
             --brown-deep: #3e2723;
             --bg-cream: #f8f5f0;
             --text-color: #5d4037;
+            --card-bg: rgba(255, 255, 255, 0.8);
+            --card-border: rgba(166, 124, 0, 0.2);
+            --card-shadow: rgba(62, 39, 35, 0.1);
+            --bg-gradient-center: #ffffff;
+            --bg-gradient-outer: var(--bg-cream);
+            --social-btn-bg: white;
+            --social-btn-border: rgba(0, 0, 0, 0.05);
+            --social-btn-shadow: rgba(0, 0, 0, 0.05);
+            --x-twitter-color: #000000;
+            --tiktok-color: #000000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* Dark Mode Color Palette */
+                --gold-light: #e6c778;
+                /* Keep gold lively */
+                --gold-dark: #cfa015;
+                /* Brighter gold for better contrast on dark */
+                --brown-deep: #f8f5f0;
+                /* Swap to cream for headings */
+                --bg-cream: #121212;
+                /* Deep dark background */
+                --text-color: #d7ccc8;
+                /* Softer light text for readability */
+                --card-bg: rgba(30, 30, 30, 0.8);
+                --card-border: rgba(230, 199, 120, 0.2);
+                --card-shadow: rgba(0, 0, 0, 0.5);
+                --bg-gradient-center: #1e1e1e;
+                --bg-gradient-outer: #0a0a0a;
+                --social-btn-bg: #222222;
+                --social-btn-border: rgba(255, 255, 255, 0.1);
+                --social-btn-shadow: rgba(0, 0, 0, 0.2);
+                --x-twitter-color: #ffffff;
+                --tiktok-color: #ffffff;
+            }
         }
 
         * {
@@ -32,7 +68,7 @@
             font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-cream);
             /* A subtle, hopeful radial gradient background */
-            background-image: radial-gradient(circle at center, #ffffff, var(--bg-cream));
+            background-image: radial-gradient(circle at center, var(--bg-gradient-center), var(--bg-gradient-outer));
             color: var(--text-color);
             display: flex;
             justify-content: center;
@@ -46,10 +82,10 @@
             max-width: 700px;
             width: 100%;
             padding: 50px 30px;
-            background: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(166, 124, 0, 0.2);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            box-shadow: 0 10px 30px var(--card-shadow);
             backdrop-filter: blur(10px);
         }
 
@@ -183,11 +219,11 @@
             h1 {
                 font-size: 1.6rem;
             }
-            
+
             p.description {
                 font-size: 0.95rem;
             }
-            
+
             .social-links a {
                 gap: 10px;
                 padding: 10px 15px;
@@ -215,9 +251,9 @@
             border-radius: 50px;
             width: 100%;
             max-width: 280px;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            background: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--social-btn-border);
+            background: var(--social-btn-bg);
+            box-shadow: 0 2px 10px var(--social-btn-shadow);
             box-sizing: border-box;
         }
 
@@ -229,8 +265,8 @@
 
         /* Official Brand Colors */
         .social-links a.x-twitter {
-            color: #000000;
-            border-color: rgba(0, 0, 0, 0.1);
+            color: var(--x-twitter-color);
+            border-color: var(--social-btn-border);
         }
 
         .social-links a.instagram {
@@ -244,8 +280,8 @@
         }
 
         .social-links a.tiktok {
-            color: #000000;
-            border-color: rgba(0, 0, 0, 0.1);
+            color: var(--tiktok-color);
+            border-color: var(--social-btn-border);
         }
 
         .social-links a.pinterest {
@@ -255,7 +291,7 @@
 
         .social-links a:hover {
             transform: translateX(10px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px var(--card-shadow);
             filter: brightness(0.95);
         }
     </style>
@@ -296,11 +332,11 @@
                     <i class="fa-brands fa-facebook"></i>
                     <span>@HOPE_TMG</span>
                 </a> -->
-                    <!-- <a href="https://www.tiktok.com/@HOPE_TMG" target="_blank" title="Follow us on TikTok" class="tiktok">
+                <!-- <a href="https://www.tiktok.com/@HOPE_TMG" target="_blank" title="Follow us on TikTok" class="tiktok">
                     <i class="fa-brands fa-tiktok"></i>
                     <span>@HOPE_TMG</span>
                 </a> -->
-                    <!-- <a href="https://pinterest.com/HOPE_TMG" target="_blank" title="Follow us on Pinterest"
+                <!-- <a href="https://pinterest.com/HOPE_TMG" target="_blank" title="Follow us on Pinterest"
                     class="pinterest">
                     <i class="fa-brands fa-pinterest"></i>
                     <span>@HOPE_TMG</span>
