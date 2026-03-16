@@ -4,307 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeless Memory Hope - Coming Soon</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <title>Hope by Timeless Memory Group</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="HOPE exists to be the light in the hallway between where you were and where you are going. We provide evidence that things can get better. share your stories with us.">
+    <meta name="keywords" content="hope, timeless memory group, mental health support, spreading hope, community, inspiration">
+    <meta name="author" content="Timeless Memory Group">
+    <link rel="canonical" href="https://hope.timelessmemorygroup.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hope.timelessmemorygroup.com/">
+    <meta property="og:title" content="Hope by Timeless Memory Group">
+    <meta property="og:description" content="No one should have to carry their heavy moments alone. HOPE exists to be the light in the hallway.">
+    <meta property="og:image" content="TM_HOPE_ICON_TRANSPARENT.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hope.timelessmemorygroup.com/">
+    <meta property="twitter:title" content="Hope by Timeless Memory Group">
+    <meta property="twitter:description" content="No one should have to carry their heavy moments alone. HOPE exists to be the light in the hallway.">
+    <meta property="twitter:image" content="TM_HOPE_ICON_TRANSPARENT.png">
+
+    <!-- Google tag (gtag.js) - Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Use the specific image as the favicon -->
+    <link rel="icon" type="image/png" href="TM_HOPE_ICON_TRANSPARENT.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        :root {
-            /* Light Mode Color Palette (Default) */
-            --gold-light: #e6c778;
-            --gold-dark: #a67c00;
-            --brown-deep: #3e2723;
-            --bg-cream: #f8f5f0;
-            --text-color: #5d4037;
-            --card-bg: rgba(255, 255, 255, 0.8);
-            --card-border: rgba(166, 124, 0, 0.2);
-            --card-shadow: rgba(62, 39, 35, 0.1);
-            --bg-gradient-center: #ffffff;
-            --bg-gradient-outer: var(--bg-cream);
-            --social-btn-bg: white;
-            --social-btn-border: rgba(0, 0, 0, 0.05);
-            --social-btn-shadow: rgba(0, 0, 0, 0.05);
-            --x-twitter-color: #000000;
-            --tiktok-color: #000000;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                /* Dark Mode Color Palette */
-                --gold-light: #e6c778;
-                /* Keep gold lively */
-                --gold-dark: #cfa015;
-                /* Brighter gold for better contrast on dark */
-                --brown-deep: #f8f5f0;
-                /* Swap to cream for headings */
-                --bg-cream: #121212;
-                /* Deep dark background */
-                --text-color: #d7ccc8;
-                /* Softer light text for readability */
-                --card-bg: rgba(30, 30, 30, 0.8);
-                --card-border: rgba(230, 199, 120, 0.2);
-                --card-shadow: rgba(0, 0, 0, 0.5);
-                --bg-gradient-center: #1e1e1e;
-                --bg-gradient-outer: #0a0a0a;
-                --social-btn-bg: #222222;
-                --social-btn-border: rgba(255, 255, 255, 0.1);
-                --social-btn-shadow: rgba(0, 0, 0, 0.2);
-                --x-twitter-color: #ffffff;
-                --tiktok-color: #ffffff;
-            }
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body,
-        html {
-            height: 100%;
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg-cream);
-            /* A subtle, hopeful radial gradient background */
-            background-image: radial-gradient(circle at center, var(--bg-gradient-center), var(--bg-gradient-outer));
-            color: var(--text-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Main container card */
-        .container {
-            max-width: 700px;
-            width: 100%;
-            padding: 50px 30px;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px var(--card-shadow);
-            backdrop-filter: blur(10px);
-        }
-
-        /* Logo Area Style */
-        .logo-icon {
-            font-size: 80px;
-            /* Creating a gold gradient text effect for the icon */
-            background: linear-gradient(45deg, var(--gold-light), var(--gold-dark));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-
-        /* If using a real image instead of the font icon, style it like this: */
-        .logo-image {
-            max-width: 120px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        /* Main Title Style */
-        h1 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: var(--brown-deep);
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        /* "Work in Progress" subtitle */
-        h2 {
-            font-family: 'Merriweather', serif;
-            font-weight: 300;
-            font-style: italic;
-            font-size: 1.5rem;
-            color: var(--gold-dark);
-            margin-bottom: 30px;
-        }
-
-        /* Descriptive paragraph */
-        p.description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* The Gold CTA Button */
-        .cta-button {
-            display: inline-block;
-            text-decoration: none;
-            padding: 15px 35px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #fff;
-            background: linear-gradient(to right, var(--gold-dark), var(--gold-light));
-            border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(166, 124, 0, 0.4);
-            transition: all 0.3s ease;
-            border: none;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(166, 124, 0, 0.6);
-            background: linear-gradient(to right, var(--gold-light), var(--gold-dark));
-        }
-
-        /* Footer styles */
-        .footer {
-            margin-top: 50px;
-            font-size: 0.85rem;
-            color: var(--gold-dark);
-            font-family: 'Merriweather', serif;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                padding: 40px 25px;
-            }
-
-            p.description {
-                max-width: 95%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            h2 {
-                font-size: 1.1rem;
-                margin-bottom: 20px;
-            }
-
-            p.description {
-                font-size: 1rem;
-                max-width: 100%;
-                margin-bottom: 30px;
-            }
-
-            .container {
-                padding: 30px 15px;
-            }
-
-            .logo-icon {
-                font-size: 60px;
-                margin-bottom: 15px;
-            }
-
-            .social-links {
-                width: 100%;
-            }
-
-            .social-links a {
-                font-size: 0.95rem;
-                padding: 12px 20px;
-            }
-        }
-
-        @media (max-width: 350px) {
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            p.description {
-                font-size: 0.95rem;
-            }
-
-            .social-links a {
-                gap: 10px;
-                padding: 10px 15px;
-            }
-        }
-
-        /* Social Media Styles */
-        .social-links {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .social-links a {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 12px 25px;
-            border-radius: 50px;
-            width: 100%;
-            max-width: 280px;
-            border: 1px solid var(--social-btn-border);
-            background: var(--social-btn-bg);
-            box-shadow: 0 2px 10px var(--social-btn-shadow);
-            box-sizing: border-box;
-        }
-
-        .social-links a i {
-            font-size: 1.4rem;
-            width: 24px;
-            text-align: center;
-        }
-
-        /* Official Brand Colors */
-        .social-links a.x-twitter {
-            color: var(--x-twitter-color);
-            border-color: var(--social-btn-border);
-        }
-
-        .social-links a.instagram {
-            color: #E4405F;
-            border-color: rgba(228, 64, 95, 0.1);
-        }
-
-        .social-links a.facebook {
-            color: #1877F2;
-            border-color: rgba(24, 119, 242, 0.1);
-        }
-
-        .social-links a.tiktok {
-            color: var(--tiktok-color);
-            border-color: var(--social-btn-border);
-        }
-
-        .social-links a.pinterest {
-            color: #BD081C;
-            border-color: rgba(189, 8, 28, 0.1);
-        }
-
-        .social-links a:hover {
-            transform: translateX(10px);
-            box-shadow: 0 5px 15px var(--card-shadow);
-            filter: brightness(0.95);
-        }
-    </style>
+    <!-- Styles are now completely separated into style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container fade-in">
         <header>
-            <i class="fa-solid fa-hourglass-half logo-icon"></i>
+            <!-- Replace the old icon with the new specific image -->
+            <img src="TM_HOPE_ICON_TRANSPARENT.png" alt="Hope Logo" class="logo-image">
 
             <h1>Hope</h1>
-            <h2>by Timeless Memory Group</h2>
+            <h2>by <a href="https://timelessmemory.group" target="_blank" class="tmg-link">Timeless Memory Group</a></h2>
         </header>
 
         <main>
@@ -313,8 +62,7 @@
                 We believe that no one should have to carry their heavy moments alone. HOPE exists to be the light in
                 the hallway between where you were and where you are going. We are here to prove that a single message
                 can change a life, and a small stone or shell can ground a soul. We don't just provide items; we provide
-                evidence
-                that things can get better. Share your stories with us on our socials and let's make a difference
+                evidence that things can get better. Share your stories with us on our socials and let's make a difference
                 together.
             </p>
 
@@ -323,35 +71,24 @@
                     <i class="fa-brands fa-x-twitter"></i>
                     <span>@HOPE_TMG</span>
                 </a>
-                <a href="https://instagram.com/HOPE_TMG" target="_blank" title="Follow us on Instagram"
-                    class="instagram">
+                <a href="https://instagram.com/HOPE_TMG" target="_blank" title="Follow us on Instagram" class="instagram">
                     <i class="fa-brands fa-instagram"></i>
                     <span>@HOPE_TMG</span>
                 </a>
-                <!-- <a href="https://facebook.com/HOPE_TMG" target="_blank" title="Follow us on Facebook" class="facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                    <span>@HOPE_TMG</span>
-                </a> -->
-                <!-- <a href="https://www.tiktok.com/@HOPE_TMG" target="_blank" title="Follow us on TikTok" class="tiktok">
-                    <i class="fa-brands fa-tiktok"></i>
-                    <span>@HOPE_TMG</span>
-                </a> -->
-                <a href="https://pinterest.com/HOPE_TMG" target="_blank" title="Follow us on Pinterest"
-                    class="pinterest">
+                <a href="https://pinterest.com/HOPE_TMG" target="_blank" title="Follow us on Pinterest" class="pinterest">
                     <i class="fa-brands fa-pinterest"></i>
                     <span>@HOPE_TMG</span>
                 </a>
             </div>
-
-            <!--             <a href="https://hope.tmshort.link" class="cta-button" target="_blank">
-                Visit hope.tmshort.link
-            </a> -->
         </main>
 
         <footer class="footer">
             <!-- <p>by Timeless Memory Group</p> -->
         </footer>
     </div>
+
+    <!-- Javascript behaviour has been separated to script.js -->
+    <script src="script.js"></script>
 
 </body>
 
