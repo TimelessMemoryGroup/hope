@@ -264,6 +264,10 @@ p.description {
     color: #BD081C;
 }
 
+.social-links a.facebook {
+    color: #1877F2;
+}
+
 /* Prevent default transition conflict with hover */
 .social-links a:hover {
     transform: translateY(-4px) !important;
