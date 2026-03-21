@@ -244,9 +244,11 @@ p.description {
     box-sizing: border-box;
 }
 
-.social-links a i {
+.social-links a i,
+.social-links a img.kofi-icon {
     font-size: 1.5rem;
     width: 24px;
+    height: auto;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -260,12 +262,16 @@ p.description {
     color: #E4405F;
 }
 
+.social-links a.facebook {
+    color: #1877F2;
+}
+
 .social-links a.pinterest {
     color: #BD081C;
 }
 
-.social-links a.facebook {
-    color: #1877F2;
+.social-links a.kofi {
+    color: #FF5E5B;
 }
 
 /* Prevent default transition conflict with hover */
